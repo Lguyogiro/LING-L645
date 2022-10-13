@@ -15,7 +15,7 @@ with open(train_file) as f:
     lines = [l.strip("\n") for l in f]
 
 vocab = list({ch for line in lines 
-              for ch in line.split("\t")[0] if ch not in " +!"})
+              for ch in line.split("\t")[0] if ch not in " !"})
 
 new_words = []
 for i in range(num_words_to_generate):
